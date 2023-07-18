@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Menu Bancario</string>
+    <string name="monto">Monto</string>
+    <string name="bienvenido_a_a_awake_bank">Bienvenido(a) a Awake Bank</string>
+    <string name="salir">Salir</string>
+    <string name="retirar">Retirar</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ver_saldo">Ver saldo</string>
 </resources>

@@ -7,12 +7,91 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textView2"
+        android:layout_width="406dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:text="@string/bienvenido_a_a_awake_bank"
+        android:textColor="#F4F0F0"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="298dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:hint="@string/monto"
+        android:inputType="text"
+        android:textColorHint="#0B0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="213dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="#400DF8"
+        android:text="@android:string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        android:background="#1C49CF"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|fill_horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonSaldo"
+                style="@style/radioButtonStyle"
+                android:text="@string/ver_saldo" />
+
+            <RadioButton
+                android:id="@+id/radioButtonIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ingresar" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRetirar"
+                style="@style/radioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/retirar" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSalir"
+                style="@style/radioButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/salir" />
+
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
